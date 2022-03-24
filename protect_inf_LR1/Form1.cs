@@ -215,5 +215,17 @@ namespace protect_inf_LR1
         {
 
         }
+
+        private void Send_txt_Click(object sender, EventArgs e)
+        {
+            if ((sourceFilePathTextBox.Text.Length > 0))
+            {
+                string filefolder = sourceFilePathTextBox.Text;
+                filefolder = filefolder.Substring(0, filefolder.LastIndexOf('\\'));
+                Email.Send_TXT(filefolder);
+            }
+            else
+                MessageBox.Show("Введите путь к исходному файлу!");
+        }
     }
 }

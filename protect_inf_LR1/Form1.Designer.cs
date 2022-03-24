@@ -44,6 +44,7 @@
             this.signFilePathTextBox = new System.Windows.Forms.TextBox();
             this.sourceFileButton = new System.Windows.Forms.Button();
             this.signFileButton = new System.Windows.Forms.Button();
+            this.Send_txt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // signButton
@@ -211,6 +212,18 @@
             this.signFileButton.UseVisualStyleBackColor = false;
             this.signFileButton.Click += new System.EventHandler(this.signFileButton_Click);
             // 
+            // Send_txt
+            // 
+            this.Send_txt.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Send_txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Send_txt.Location = new System.Drawing.Point(247, 221);
+            this.Send_txt.Name = "Send_txt";
+            this.Send_txt.Size = new System.Drawing.Size(110, 48);
+            this.Send_txt.TabIndex = 17;
+            this.Send_txt.Text = "Отправить";
+            this.Send_txt.UseVisualStyleBackColor = false;
+            this.Send_txt.Click += new System.EventHandler(this.Send_txt_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,6 +231,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(642, 291);
+            this.Controls.Add(this.Send_txt);
             this.Controls.Add(this.signFileButton);
             this.Controls.Add(this.sourceFileButton);
             this.Controls.Add(this.signFilePathTextBox);
@@ -262,6 +276,7 @@
         private System.Windows.Forms.TextBox signFilePathTextBox;
         private System.Windows.Forms.Button sourceFileButton;
         private System.Windows.Forms.Button signFileButton;
+        private System.Windows.Forms.Button Send_txt;
     }
 }
 
